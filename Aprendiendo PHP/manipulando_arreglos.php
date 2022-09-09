@@ -7,7 +7,15 @@ $contar = count($edades);
 
 echo "Edades tiene ".$contar." Elementos";
 
+$personas = [
+            $nmbres = [
+                    "F"
 
+
+            ]
+
+
+]
 
 
 
