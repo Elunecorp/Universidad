@@ -11,9 +11,9 @@ include "./Test_varaibles.php";
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/Fernando.PNG">
+  <link rel="icon" type="image/png" sizes="32x32" href="./files/logoUPT.svg">
   
-  <title>Frontend Mentor | Time tracking dashboard</title>
+  <title>UPT app 2022</title>
   <link rel="stylesheet" href="styles.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
