@@ -72,8 +72,8 @@ include "./Test_varaibles.php";
             	</div>
           	</div> 
           <!-- Creamos las 6 tarjetas -->
-		  
-          <!-- Primera Tarjeta Trabajo -->
+		  <!-- 
+                Primera Tarjeta Trabajo 
           	<div class="card-work">
             	<div class="card-work__background">
              		<img class="card-work__background--image" src="..//files/eye-solid.svg" width="200" heigth="300" alt="Icono de el tema">
@@ -85,12 +85,12 @@ include "./Test_varaibles.php";
                 	</div>
                 	<div class="card-work__down">
                   		<p class="card-work__hours">32hrs</p>
-                  		<p class="card-work__state">Previous - 7hrs</p>
+                  		<p class="card-work__state">Antes - 7hrs</p>
                 	</div>
             	</div>
           	</div> 
 
-          <!-- Segunda Tarjeta  -->
+                 Segunda Tarjeta  
 		    <div class="card-work">
             	<div class="card-work__background">
              		<img class="card-work__background--image" src="..//files/book-solid.svg" width="200" heigth="300" alt="Icono de el tema">
@@ -102,12 +102,12 @@ include "./Test_varaibles.php";
                 	</div>
                 	<div class="card-work__down">
                   		<p class="card-work__hours">32hrs</p>
-                  		<p class="card-work__state">Previous - 7hrs</p>
+                  		<p class="card-work__state">Antes- 7hrs</p>
                 	</div>
             	</div>
           	</div> 
 
-          <!-- Tercera Tarjeta -->
+          	    Tercera Tarjeta 
 		    <div class="card-work">
             	<div class="card-work__background">
              		<img class="card-work__background--image" src="..//files/eye-solid.svg" width="200" heigth="300" alt="Icono de el tema">
@@ -119,12 +119,12 @@ include "./Test_varaibles.php";
                 	</div>
                 	<div class="card-work__down">
                   		<p class="card-work__hours">32hrs</p>
-                  		<p class="card-work__state">Previous - 7hrs</p>
+                  		<p class="card-work__state">Antes- 7hrs</p>
                 	</div>
             	</div>
           	</div> 
 			
-            <!-- Cuarta Tarjeta
+                Cuarta Tarjeta
 		    <div class="card-work">
             	<div class="card-work__background">
              		<img class="card-work__background--image" src="..//files/eye-solid.svg" width="200" heigth="300" alt="Icono de el tema">
@@ -136,7 +136,7 @@ include "./Test_varaibles.php";
                 	</div>
                 	<div class="card-work__down">
                   		<p class="card-work__hours">32hrs</p>
-                  		<p class="card-work__state">Previous - 7hrs</p>
+                  		<p class="card-work__state">Antes- 7hrs</p>
                 	</div>
             	</div>
           	</div> 
@@ -153,7 +153,7 @@ include "./Test_varaibles.php";
                 	</div>
                 	<div class="card-work__down">
                   		<p class="card-work__hours">32hrs</p>
-                  		<p class="card-work__state">Previous - 7hrs</p>
+                  		<p class="card-work__state">Antes - 7hrs</p>
                 	</div>
             	</div>
           	</div> 
@@ -170,7 +170,7 @@ include "./Test_varaibles.php";
                 	</div>
                 	<div class="card-work__down">
                   		<p class="card-work__hours">32hrs</p>
-                  		<p class="card-work__state">Previous - 7hrs</p>
+                  		<p class="card-work__state">Antes- 7hrs</p>
                 	</div>
             	</div>
           	</div> -->

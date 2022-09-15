@@ -61,16 +61,16 @@ function drawElements(array){
         secondSection.innerHTML += `
         <div class="card">
             <div class="card__background" style="background-color: ${colorObject.color};">
-            <img class="card__background--image" src="./images/icon-${activityLowerCase}.svg" alt="">
+            <img class="card__background--image" src="../files/icon-${activityLowerCase}.svg" heigth="60px" width="40" alt="">
             </div>
             <div class="card__details">
                 <div class="card__up">
                     <p class="card__title">${activity}</p>
-                    <img class="card__dots" src="./images/icon-ellipsis.svg" alt="dots">
+                    <img class="card__dots" src="../files/icon-ellipsis.svg" heigth="40px" width="20" alt="dots">
                 </div>
                 <div class="card__time">
-                    <p class="card__hour">${element.current}hrs</p>
-                    <p class="card__previous">Previous - ${element.previous}hrs</p>
+                    <p class="card__hour"> --> ${element.current}hrs</p>   <!--Aqui estamos imprimiento en car hour , el elemento de nuestra tabla json y current(actual)-->
+                    <p class="card__previous">Anteriormente - ${element.previous}hrs</p>    <!--Entonces debemos cambiar el nombre de los elementos en el archivo data.json -->
                 </div>
             </div>
         </div>

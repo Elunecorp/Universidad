@@ -7,7 +7,7 @@ $fruta = 'manzana';
 // 
 
 
-$horas1 = "5 horas";
-$horasprevias = "7horas";
+$horas1 = "Test - importando valores";
+$horasprevias = "Importado desde base de datos";
 
 ?>

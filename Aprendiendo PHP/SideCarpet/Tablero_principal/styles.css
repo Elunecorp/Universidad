@@ -138,7 +138,7 @@ body{
     padding-left: 235px;
 }
 .card__details{
-    background-color: var(--Dark-blue);
+    background-color: var(--Desaturated-blue);           /*Este es el color de las tarjetas  */
     display: flex;
     flex-direction: column;
     height: 122px;
@@ -197,7 +197,7 @@ body{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 290px 120px 20px;                 /* establecemos el margen superior , para que solo se muetren adecuadamente tres de las tarjetas  */
-         /* Agregamos mas paddings al calculo para cuadrar las tarjetas*/
+         /* Agregamos mas paddings al calculo para cuadrar las tarje*/
     }
 
 
@@ -208,7 +208,7 @@ body{
        flex-direction: column;
     }
     .main-card__image{
-        width: 85px;
+        width: 255px;
         margin-bottom: 45px;
     }
     .main-card__title{
