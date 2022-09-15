@@ -1,104 +1,53 @@
 [
     {
-      "title": "Work",
+      "title": "Actividad",
       "timeframes": {
-        "daily": {
+        "semanal": {
           "current": 5,
           "previous": 7
         },
-        "weekly": {
+        "mensual": {
           "current": 32,
           "previous": 36
         },
-        "monthly": {
+        "semestral": {
           "current": 103,
           "previous": 128
         }
       }
     },
     {
-      "title": "Play",
+      "title": "Asistencia",
       "timeframes": {
-        "daily": {
+        "semanal": {
           "current": 1,
           "previous": 2
         },
-        "weekly": {
+        "mensual": {
           "current": 10,
           "previous": 8
         },
-        "monthly": {
+        "semestral": {
           "current": 23,
           "previous": 29
         }
       }
     },
     {
-      "title": "Study",
+      "title": "Resumen",
       "timeframes": {
-        "daily": {
+        "semanal": {
           "current": 0,
           "previous": 1
         },
-        "weekly": {
+        "mensual": {
           "current": 4,
           "previous": 7
         },
-        "monthly": {
+        "semestral": {
           "current": 13,
           "previous": 19
         }
       }
-    },
-    {
-      "title": "Exercise",
-      "timeframes": {
-        "daily": {
-          "current": 1,
-          "previous": 1
-        },
-        "weekly": {
-          "current": 4,
-          "previous": 5
-        },
-        "monthly": {
-          "current": 11,
-          "previous": 18
-        }
-      }
-    },
-    {
-      "title": "Social",
-      "timeframes": {
-        "daily": {
-          "current": 1,
-          "previous": 3
-        },
-        "weekly": {
-          "current": 5,
-          "previous": 10
-        },
-        "monthly": {
-          "current": 21,
-          "previous": 23
-        }
-      }
-    },
-    {
-      "title": "Self Care",
-      "timeframes": {
-        "daily": {
-          "current": 0,
-          "previous": 1
-        },
-        "weekly": {
-          "current": 2,
-          "previous": 2
-        },
-        "monthly": {
-          "current": 7,
-          "previous": 11
-        }
-      }
-    }
+    }   
   ]

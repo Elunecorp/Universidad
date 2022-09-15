@@ -1,39 +1,46 @@
 import data from './data.json' assert {type: 'json'}
 
 let BgColors = [
-    {activity: 'work', color: 'hsl(15, 100%, 70%)'},
-    {activity: 'play', color: 'hsl(195, 74%, 62%)'},
-    {activity: 'study', color: 'hsl(348, 100%, 68%)'},
-    {activity: 'exercise', color: 'hsl(145, 58%, 55%)'},
-    {activity: 'social', color: 'hsl(264, 64%, 52%)'},
-    {activity: 'self care', color: 'hsl(43, 84%, 65%)'},
+    {activity: 'actividad', color: 'hsl(120, 100%, 70%)'},
+    {activity: 'asistencia', color: 'hsl(195, 74%, 62%)'},
+    {activity: 'resumen', color: 'hsl(310, 100%, 68%)'},
 ]
+// Console.log(data)
 
-let dailyArray = data.map(item => item.timeframes.daily);
-let weeklyArray = data.map(item => item.timeframes.weekly);
-let monthlyArray = data.map(item => item.timeframes.monthly);
+let semanalArray = data.map(item => item.timeframes.semanal);          // item.timeframes.daily   , si cambiamos dayli por semanal debemos cambiar la variable tambien en 
+let mensualArray = data.map(item => item.timeframes.mensual);         // nuestro data.json dentro de timeframes
+let semestralArray = data.map(item => item.timeframes.semestral);
 
-let dailyBtn = document.querySelector('#daily');
-let weeklyBtn = document.querySelector('#weekly');
-let monthlyBtn = document.querySelector('#monthly');
+// Para nuestras variables seleccionables:   
+// Ademas como "semanal" es un ID debemos usar un # 
 
+//Colocaremos a nuestros botones con los nombres: semanalBtn , mensualBtn , semestralBtn
+let semanalBtn = document.querySelector('#semanal');
+let mensualBtn = document.querySelector('#mensual');
+let semestralBtn = document.querySelector('#semestral');
+
+//tenemos un elemento al que podemos llamar con query selector
 let secondSection = document.querySelector('.second-section')
 
+
+// Por cada uno de estos elementos se deberia dibujar una tarjeta
+// Entonces forEach(element)  => dibujara una tarjeta
 data.forEach(element=>{
     console.log(element.title.toLocaleLowerCase())
 });
 
-
-dailyBtn.addEventListener('click', ()=>{    
-    drawElements(dailyArray);
+// Para semanalBtn (boton semanal) crearemos un evento que queremos escuchar, este evento es el evento click
+// Asi cada vez que alguien clikea en la ID lo sabremos. , en consola podremos ver si funciona usando: console.log('se hizo click');
+semanalBtn.addEventListener('click', ()=>{    
+    drawElements(semanalArray);
 });
 
-weeklyBtn.addEventListener('click', ()=>{    
-    drawElements(weeklyArray);
+mensualBtn.addEventListener('click', ()=>{    
+    drawElements(mensualArray);
 });
 
-monthlyBtn.addEventListener('click', ()=>{    
-    drawElements(monthlyArray);
+semestralBtn.addEventListener('click', ()=>{    
+    drawElements(semestralArray);
 });
 
 function drawElements(array){
@@ -54,16 +61,16 @@ function drawElements(array){
         secondSection.innerHTML += `
         <div class="card">
             <div class="card__background" style="background-color: ${colorObject.color};">
-                <img class="card__background--image" src="./images/icon-${activityLowerCase}.svg" alt="">
+            <img class="card__background--image" src="./images/icon-${activityLowerCase}.svg" alt="">
             </div>
             <div class="card__details">
                 <div class="card__up">
-                <p class="card__title">${activity}</p>
-                <img class="card__dots" src="./images/icon-ellipsis.svg" alt="dots">
+                    <p class="card__title">${activity}</p>
+                    <img class="card__dots" src="./images/icon-ellipsis.svg" alt="dots">
                 </div>
-                <div class="card__down">
-                <p class="card__hours">${element.current}hrs</p>
-                <p class="card__state">Previous - ${element.previous}hrs</p>
+                <div class="card__time">
+                    <p class="card__hour">${element.current}hrs</p>
+                    <p class="card__previous">Previous - ${element.previous}hrs</p>
                 </div>
             </div>
         </div>

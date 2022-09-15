@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+/* extraido de: https://fonts.google.com/     -->  https://fonts.google.com/specimen/Rubik      @import */
+
+
+/* SELECTOR UNIVERSAL */
+*{
+    padding: 0;  /*Debemos resetear los margenes y espacios que nos coloca el navegador por defeto  */
+    margin: 0;
+
+    box-sizing: border-box; /* Cuando tenemos establecido el border box , por mas que añadamos contenido dentro de la caja */
+                            /* esta conservra su forma ( su ancho y alto establecidos)
+                            /*Esto lo hacemos para evitar que la tarjeta crezca segun el contenido que añadamos */
+    
+}
+
+/* CREAREMOS LAS VARIABLES EN EL ROOT */
+:root{
+/* Las varaibles dentro de css deben tener doble guion (--) y no seben contener espacios (-) */
+/* Utilizar varaibles nos brindara una ventaja cuando utilizemos codigos extensos*/
+/* En casos de codigos extensos , al querer cambiar o modificar un color venimos diretamente a estas variables y cambiamos el valor hsl , este cambio afectara a todas las lineas en donde referencemos estas variables*/
+    --Blue: hsl(246, 80%, 60%);
+    --UPTcolor: hsla(234, 63%, 21%);   /* #141b57 Color Hex    https://www.color-hex.com/color/141b57 */
+    --Light-orange: hsl(15, 100%, 70%);
+    --Soft-blue: hsl(195, 74%, 62%);
+    --Light-red: hsl(348, 100%, 68%);
+    --Lime-green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft-orange: hsl(43, 84%, 65%);
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+    --White: white;
+
+}
+
+
+body{
+    /* Llamamos a la varible de el color que queremos*/
+    background-color: var(--UPTcolor);
+
+    /* Aplicamos la fuente */
+    font-family: 'Rubik', sans-serif;
+
+    /* Aplicamos color a la letra */
+    color: var(--White);
+}
+
+
+/* Una buena practica es ir colocando los estilos en el orden en el que se establecen en el archivo principal (sea HTML o PHP)  */
+/* Continuamos con el main-container (es una clase) */
+.main-container{
+    /* Aplicamos color a el borde el body */
+    border: 2px solid white;  
+
+    /* establecemos el ancho en 230pixeles */
+    width: 230px;
+
+    /* Centramos automaticamente el margin , Documentacion:  margin-top = 164px , margin-right = auto , margin-bottom y margin-left.  */
+    margin: 157px auto; 
+    position: relative;  
+}
+
+.first-seccion{
+    /* Aplicamos color a el borde a la primera seccion */
+    border: 2px solid yellow;
+    position: relative;
+}
+
+.main-card__user{
+    background-color: var(--Violet);
+    display: flex;
+    border-radius: 16px;           /* Es el borde de nuestro tablero morado , si es mayor sera mas redondeado */
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+/*.main-card__image{
+    width: 200px;
+    margin-right: 10px;
+    border: 3px solid var(--Light-orange);
+    border-radius: 50%;
+}
+*/
+.main-card__title{
+    font-size: 0.9em;
+    margin: 10px 0 4px;
+}
+.main-card__name{
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--White);
+}
+.main-card__dates{
+    background-color: var(--Light-orange);
+    border-radius: 16px;
+    display: flex;     /* Con esto buscamos que las paralbras esten en la misma fila  (una al lado de la otra)  */
+    justify-content: space-around;
+    height: 100px;
+    /*margin-top: 52px; */
+    padding-top: 52px;
+    font-size: 1.2em;
+    position: absolute;
+    width: 35%;
+    top: 105px;
+    /*z-index: -1; */
+}
+
+.main-card__frequency:hover{
+    cursor: pointer;
+    color: var(--White);
+}
+
+.second-section{
+    margin-top: 90px;  /* Colocamos un margen superior de la segunda seccion */
+    padding-top: 220px;
+    /* border: 1px solid white; */
+}
+.card{
+    /* border: 1px solid white; */
+    position: relative;
+    margin-bottom: 105px;
+}
+
+
+/* REVISAR */
+.card__background{
+    background-color: var(--Light-orange);
+    height: 80px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow: hidden;
+}
+.card__image{
+    margin-top: -10px;
+    padding-left: 235px;
+}
+.card__details{
+    background-color: var(--Dark-blue);
+    display: flex;
+    flex-direction: column;
+    height: 122px;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 16px;
+    position: absolute;
+    width: 100%;
+    bottom: -85px;
+}
+.card__details:hover{
+    background-color: var(--Desaturated-blue) ;
+    cursor: pointer;
+}
+.card__activity, .card__time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__title{
+    font-weight: 500;
+    font-size: 1.2em;
+    color: var(--White);
+}
+.card__hour{
+    font-size: 2em;
+    color: var(--White);
+    font-weight: 300;
+}
+
+.attribution { 
+    font-size: 18px; 
+    text-align: center; 
+    margin-bottom: 60px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(min-width: 1200px){
+    .main-container{
+        width: 1150px;
+        display: flex;
+        margin: 160px auto;
+    }
+    .first-section{
+        /* border: 5px solid yellow; */
+        padding-top: 24px;
+        width: 280px;
+        height: 153px;
+    }
+    .second-section{
+        height: 564px;
+        width: 860px;
+        padding-top: 150px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 290px 120px 20px;                 /* establecemos el margen superior , para que solo se muetren adecuadamente tres de las tarjetas  */
+         /* Agregamos mas paddings al calculo para cuadrar las tarjetas*/
+    }
+
+
+
+
+    .main-card__user{
+       height: 355px;
+       flex-direction: column;
+    }
+    .main-card__image{
+        width: 85px;
+        margin-bottom: 45px;
+    }
+    .main-card__title{
+        font-size: 1em;
+    }
+    .main-card__name{
+        font-size: 2.4em;
+    }
+    .main-card__dates{
+        margin-top: 245px;
+        height: 200px;
+        flex-direction: column;
+        padding: 40px 32px 18px;
+    }
+    .card{
+        width: 240px;
+        height: 244px;
+        margin-bottom: 25px;
+    }
+    .card__image{
+        padding-left: 140px;
+    }
+    .card__details{
+        height: 200px;
+        bottom: -10px;
+    }
+    .card__time{
+        height: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0;
+    }
+}
